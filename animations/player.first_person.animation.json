@@ -119,8 +119,8 @@
         "rightarm": {
           "position" : [
             15.5,
-            "-7.5 - v.short_arm_offset_left - (v.map_angle * 8.0)",
-            "9.0 + v.short_arm_offset_left - (v.map_angle * 8.0)"
+            "-7.0 - v.short_arm_offset_right - (v.map_angle * 8.0)",
+            "8.0 + v.short_arm_offset_right - (v.map_angle * 8.0)"
           ],
           "rotation": [
             50,

@@ -135,7 +135,8 @@
           "v.chest_layer_visible = 1.0;",
           "v.leg_layer_visible = 1.0;",
           "v.boot_layer_visible = 1.0;",
-          
+
+          "v.item_use_duration = q.main_hand_item_use_duration > 0.0 ? (q.main_hand_item_max_duration - (q.main_hand_item_use_duration - q.frame_alpha + 1.0)) : 0.0;",
           "v.melee_spear_equipped = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_spear');",  
           "v.tp_melee_spear_base_arm_rotation_x = (q.is_swimming || q.is_gliding) ? (-115.0 - q.target_x_rotation) : (q.is_crawling ? -115.0 : -30.0);",  
   
@@ -186,8 +187,7 @@
           "v.fp_melee_spear_attack_attachable_rotation_z = t.melee_spear_attack_raise_scale * 40.0 + t.melee_spear_attack_recover_scale * -40.0;",
           "v.tp_melee_spear_attack_arm_rotation_x = t.melee_spear_attack_raise_scale * 90.0 + t.melee_spear_attack_thrust_scale * -120.0 + t.melee_spear_attack_recover_scale * 30.0;",
           "v.tp_melee_spear_attack_item_rotation_x = t.melee_spear_attack_thrust_scale * 60.0 + t.melee_spear_attack_recover_scale * -60.0;",
-          "v.tp_melee_spear_attack_attachable_position_z = (t.melee_spear_attack_thrust_scale * -0.15 + t.melee_spear_attack_recover_scale * 0.15) * v.melee_spear_java_to_bedrock_scale;",
-          "v.item_use_duration = q.main_hand_item_use_duration > 0.0 ? (q.main_hand_item_max_duration - (q.main_hand_item_use_duration - q.frame_alpha + 1.0)) : 0.0;"
+          "v.tp_melee_spear_attack_attachable_position_z = (t.melee_spear_attack_thrust_scale * -0.15 + t.melee_spear_attack_recover_scale * 0.15) * v.melee_spear_java_to_bedrock_scale;"
         ],
         "animate": [
           "root",

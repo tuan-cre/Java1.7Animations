@@ -96,7 +96,8 @@
           "v.elytra_sneak_amount = (q.is_sneaking && !q.is_gliding && !q.is_swimming) ? 1.0 : 0.0;",
           "v.head_rot_detached_from_camera = 0.0;",
           "t.head_rot_detached_from_camera = (q.is_sleeping || q.is_riding || q.is_gliding || q.is_swimming || q.is_crawling || v.damage_nearby_mobs); v.looks_at_camera_amount = (v.is_first_person || t.head_rot_detached_from_camera) ? 1.0 : 0.0;",
-          "v.is_valid_player = 0.0;"
+          "v.is_valid_player = 0.0;",
+          "v.melee_spear_equipped = 0.0;"
         ],
         "pre_animation": [
           // Restrict certain player entities from updating variables that are based on historical values.
