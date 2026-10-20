@@ -1,3 +1,16 @@
+### v2.6.0
+
+- **Now targets Minecraft Bedrock Edition v1.26.0+** (`min_engine_version` bumped to `1.26.0`)
+- Spear animations added (first person hold/use/attack), ported from vanilla 1.26 and adapted to this pack
+    - Merged upstream PR #18, with fixes for the regressions it introduced
+    - Spear support now works in **every** subpack, not just `Default`
+    - The regular attack animation no longer plays on top of the spear attack animation
+- All player entity definitions now use `format_version` `1.26.0`
+- Fixed the first person map hold pose using the left arm offsets for the right arm
+- Fixed the item use duration being calculated after it was used, causing a one frame delay
+- Fixed the egg entity in the `No Damage/Projectile Particles` subpack missing the warm/cold egg variants
+- Fixed the pack description in the manifest missing a color code
+
 ### v2.5.1
 
 - Added `No Armor Overlay + Console Edition Eat Animation` subpack
